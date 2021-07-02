@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bill Splitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/base.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/components.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/@tailwindcss/forms@0.3.3/dist/forms.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/utilities.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="border-b border-gray-100">
+      <div class="bg-pink-800 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-2">
+          <nav class="flex items-center justify-between gap-3">
+            <div>
+              <a href="/" class="text-2xl">Simple website</a>
+            </div>
+            <nav class="flex justify-end items-center flex-wrap gap-2">
+              <a href="/faq" class="px-2 hover:text-gray-200">FAQ</a>
+              <a href="/terms-of-use" class="px-2 hover:text-gray-200"
+                >Terms of use</a
+              >
+              <a href="/about-us" class="px-2 hover:text-gray-200">About Us</a>
+              <a href="/pricing" class="px-2 hover:text-gray-200">Pricing</a>
+            </nav>
+          </nav>
+        </div>
+      </div>
+      <div class="text-gray-500">
+        <div class="max-w-6xl mx-auto px-4 py-2 text-sm">
+          <nav class="flex justify-end items-center flex-wrap gap-5">
+            <a href="/tax-calculator" class="hover:text-pink-800"
+              >Tax Calculator</a
+            >
+            <a href="/bill-splitter" class="hover:text-pink-800"
+              >Bill Splitter</a
+            >
+            <a href="/tax-calculator-v2" class="hover:text-pink-800"
+              >Tax Calculator v2</a
+            >
+            <a href="/bill-splitter-v2" class="hover:text-pink-800"
+              >Bill Splitter v2</a
+            >
+            <a href="/tax-calculator-broken" class="hover:text-pink-800"
+              >Broken Tax Calculator</a
+            >
+            <a href="/pokemons" class="hover:text-pink-800">Pokemons</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="bg-gray-50">
+      <div class="max-w-4xl mx-auto px-3 py-12 space-y-6">
+        <div>
+          <h1 class="text-6xl mb-4 font-extrabold">Bill Splitter</h1>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="space-y-5">
+            <div>
+              <label for="billTotal" class="block text-xs text-gray-500"
+                >Bill total</label
+              >
+              <input
+                type="number"
+                id="billTotal"
+                class="block w-full rounded"
+              />
+            </div>
+            <div>
+              <label for="pax" class="block text-xs text-gray-500">Pax</label>
+              <input type="number" id="pax" class="block w-full rounded" />
+            </div>
+            <div class="text-right">
+              <button
+                type="button"
+                id="splitBtn"
+                class="w-full px-3 py-1 bg-pink-500 text-white rounded shadow"
+              >
+                Split
+              </button>
+            </div>
+          </div>
+          <div class="space-y-5">
+            <div class="text-gray-500">Each pax need to pay</div>
+            <div>
+              <output>
+                <span id="result" class="text-6xl tabular-nums font-mono"
+                  >0.00</span
+                >
+              </output>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-white text-gray-400">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div class="space-y-8 xl:col-span-1">
+            <div>
+              <a href="/" class="text-2xl font-bold text-black">
+                Simple website
+              </a>
+            </div>
+            <p class="text-gray-500 text-base">
+              Simplicity is the ultimate sophistication.
+            </p>
+          </div>
+          <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3
+                  class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                >
+                  Features
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="/tax-calculator"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Tax Calculator
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/bill-splitter"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Bill Splitter
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/tax-calculator-v2"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Tax Calculator v2
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/bill-splitter-v2"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Bill Splitter v2
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/tax-calculator-broken"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Broken Tax Calculator
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/pokemons"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Pokemons
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3
+                  class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                >
+                  Support
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="/pricing"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Pricing
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/faq"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      FAQ
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3
+                  class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                >
+                  Company
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="/about-us"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      About Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3
+                  class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                >
+                  Legal
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="/terms-of-use"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Terms of use
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex justify-between mt-12 border-t border-gray-200 pt-8 text-center"
+        >
+          <small
+            >Copyright &copy; <span id="footer-year">2020</span> Big Corp
+            Inc.</small
+          >
+          <small>Today is <span id="footer-today">2020-10-21</span></small>
+        </div>
+      </div>
+    </footer>
+    <script src="javascripts/helpers.js"></script>
+    <script src="javascripts/footer.js"></script>
+    <script src="javascripts/calculator.js"></script>
+    <script>
+      const splitBtn = document.querySelector('#splitBtn');
+      splitBtn.addEventListener('click', splitBill);
+    </script>
+  </body>
+</html>

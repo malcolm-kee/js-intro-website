@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pricing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/base.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/components.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/@tailwindcss/forms@0.3.3/dist/forms.min.css"
+      rel="stylesheet"
+    />
+    <link href="/stylesheets/style.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/utilities.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="border-b border-gray-100">
+      <div class="bg-pink-800 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-2">
+          <nav class="flex items-center justify-between gap-3">
+            <div>
+              <a href="/" class="text-2xl">Simple website</a>
+            </div>
+            <nav class="flex justify-end items-center flex-wrap gap-2">
+              <a href="/faq" class="px-2 hover:text-gray-200">FAQ</a>
+              <a href="/terms-of-use" class="px-2 hover:text-gray-200"
+                >Terms of use</a
+              >
+              <a href="/about-us" class="px-2 hover:text-gray-200">About Us</a>
+              <a href="/pricing" class="px-2 hover:text-gray-200">Pricing</a>
+            </nav>
+          </nav>
+        </div>
+      </div>
+      <div class="text-gray-500">
+        <div class="max-w-6xl mx-auto px-4 py-2 text-sm">
+          <nav class="flex justify-end items-center flex-wrap gap-5">
+            <a href="/tax-calculator" class="hover:text-pink-800"
+              >Tax Calculator</a
+            >
+            <a href="/bill-splitter" class="hover:text-pink-800"
+              >Bill Splitter</a
+            >
+            <a href="/tax-calculator-v2" class="hover:text-pink-800"
+              >Tax Calculator v2</a
+            >
+            <a href="/bill-splitter-v2" class="hover:text-pink-800"
+              >Bill Splitter v2</a
+            >
+            <a href="/tax-calculator-broken" class="hover:text-pink-800"
+              >Broken Tax Calculator</a
+            >
+            <a href="/pokemons" class="hover:text-pink-800">Pokemons</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="bg-gray-50">
+      <div class="bg-white">
+        <div class="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+          <div class="sm:flex sm:flex-col sm:align-center">
+            <h1 class="text-5xl font-extrabold text-gray-900 sm:text-center">
+              Pricing Plans
+            </h1>
+            <p class="mt-5 text-xl text-gray-500 sm:text-center">
+              Start building for free, then add a site plan to go live. Account
+              plans unlock additional features.
+            </p>
+            <div
+              class="relative self-center mt-6 bg-gray-100 rounded-lg p-0.5 flex sm:mt-8"
+            >
+              <button
+                type="button"
+                class="relative w-1/2 bg-white border-gray-200 rounded-md shadow-sm py-2 text-sm font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto sm:px-8"
+                id="monthly-plans-btn"
+              >
+                Monthly billing
+              </button>
+              <button
+                type="button"
+                class="ml-0.5 relative w-1/2 border border-transparent rounded-md py-2 text-sm font-medium text-gray-700 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto sm:px-8"
+                id="annual-plans-btn"
+              >
+                Yearly billing
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4"
+          >
+            <div
+              class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
+            >
+              <div class="p-6">
+                <h2 class="text-lg leading-6 font-medium text-gray-900">
+                  Hobby
+                </h2>
+                <p class="mt-4 text-sm text-gray-500">
+                  All the basics for starting a new business
+                </p>
+                <p class="mt-8">
+                  <span class="text-4xl font-extrabold text-gray-900"
+                    >$<span id="hobby-price">12</span></span
+                  >
+                  <span class="price-unit text-base font-medium text-gray-500"
+                    >/mo</span
+                  >
+                </p>
+                <a
+                  href="#"
+                  class="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                  >Buy Hobby</a
+                >
+              </div>
+              <div class="pt-6 pb-8 px-6">
+                <h3
+                  class="text-xs font-medium text-gray-900 tracking-wide uppercase"
+                >
+                  What's included
+                </h3>
+                <ul class="mt-6 space-y-4">
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Potenti felis, in cras at at ligula nunc.</span
+                    >
+                  </li>
+
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Orci neque eget pellentesque.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
+            >
+              <div class="p-6">
+                <h2 class="text-lg leading-6 font-medium text-gray-900">
+                  Freelancer
+                </h2>
+                <p class="mt-4 text-sm text-gray-500">
+                  All the basics for starting a new business
+                </p>
+
+                <p class="mt-8">
+                  <span class="text-4xl font-extrabold text-gray-900"
+                    >$<span id="freelancer-price">24</span></span
+                  >
+                  <span class="price-unit text-base font-medium text-gray-500"
+                    >/mo</span
+                  >
+                </p>
+                <a
+                  href="#"
+                  class="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                  >Buy Freelancer</a
+                >
+              </div>
+              <div class="pt-6 pb-8 px-6">
+                <h3
+                  class="text-xs font-medium text-gray-900 tracking-wide uppercase"
+                >
+                  What's included
+                </h3>
+                <ul class="mt-6 space-y-4">
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Potenti felis, in cras at at ligula nunc.
+                    </span>
+                  </li>
+
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Orci neque eget pellentesque.</span
+                    >
+                  </li>
+
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Donec mauris sit in eu tincidunt etiam.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
+            >
+              <div class="p-6">
+                <h2 class="text-lg leading-6 font-medium text-gray-900">
+                  Startup
+                </h2>
+                <p class="mt-4 text-sm text-gray-500">
+                  All the basics for starting a new business
+                </p>
+                <p class="mt-8">
+                  <span class="text-4xl font-extrabold text-gray-900"
+                    >$<span id="startup-price">32</span></span
+                  >
+                  <span class="price-unit text-base font-medium text-gray-500"
+                    >/mo</span
+                  >
+                </p>
+                <a
+                  href="#"
+                  class="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                  >Buy Startup</a
+                >
+              </div>
+              <div class="pt-6 pb-8 px-6">
+                <h3
+                  class="text-xs font-medium text-gray-900 tracking-wide uppercase"
+                >
+                  What's included
+                </h3>
+                <ul class="mt-6 space-y-4">
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Potenti felis, in cras at at ligula nunc.
+                    </span>
+                  </li>
+
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Orci neque eget pellentesque.</span
+                    >
+                  </li>
+
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Donec mauris sit in eu tincidunt etiam.</span
+                    >
+                  </li>
+
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Faucibus volutpat magna.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
+            >
+              <div class="p-6">
+                <h2 class="text-lg leading-6 font-medium text-gray-900">
+                  Enterprise
+                </h2>
+                <p class="mt-4 text-sm text-gray-500">
+                  All the basics for starting a new business
+                </p>
+                <p class="mt-8">
+                  <span class="text-4xl font-extrabold text-gray-900"
+                    >$<span id="enterprise-price">48</span></span
+                  >
+                  <span class="price-unit text-base font-medium text-gray-500"
+                    >/mo</span
+                  >
+                </p>
+                <a
+                  href="#"
+                  class="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                  >Buy Enterprise</a
+                >
+              </div>
+              <div class="pt-6 pb-8 px-6">
+                <h3
+                  class="text-xs font-medium text-gray-900 tracking-wide uppercase"
+                >
+                  What's included
+                </h3>
+                <ul class="mt-6 space-y-4">
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Potenti felis, in cras at at ligula nunc.
+                    </span>
+                  </li>
+
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Orci neque eget pellentesque.</span
+                    >
+                  </li>
+
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Donec mauris sit in eu tincidunt etiam.</span
+                    >
+                  </li>
+
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Faucibus volutpat magna.</span
+                    >
+                  </li>
+
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Id sed tellus in varius quisque.</span
+                    >
+                  </li>
+
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Risus egestas faucibus.</span
+                    >
+                  </li>
+
+                  <li class="flex space-x-3">
+                    <!-- Heroicon name: solid/check -->
+                    <svg
+                      class="flex-shrink-0 h-5 w-5 text-green-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="text-sm text-gray-500"
+                      >Risus cursus ullamcorper.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-white text-gray-400">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div class="space-y-8 xl:col-span-1">
+            <div>
+              <a href="/" class="text-2xl font-bold text-black">
+                Simple website
+              </a>
+            </div>
+            <p class="text-gray-500 text-base">
+              Simplicity is the ultimate sophistication.
+            </p>
+          </div>
+          <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3
+                  class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                >
+                  Features
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="/tax-calculator"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Tax Calculator
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/bill-splitter"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Bill Splitter
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/tax-calculator-v2"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Tax Calculator v2
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/bill-splitter-v2"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Bill Splitter v2
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/tax-calculator-broken"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Broken Tax Calculator
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/pokemons"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Pokemons
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3
+                  class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                >
+                  Support
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="/pricing"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Pricing
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/faq"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      FAQ
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3
+                  class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                >
+                  Company
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="/about-us"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      About Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3
+                  class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                >
+                  Legal
+                </h3>
+                <ul class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="/terms-of-use"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Terms of use
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex justify-between mt-12 border-t border-gray-200 pt-8 text-center"
+        >
+          <small
+            >Copyright &copy; <span id="footer-year">2020</span> Big Corp
+            Inc.</small
+          >
+          <small>Today is <span id="footer-today">2020-10-21</span></small>
+        </div>
+      </div>
+    </footer>
+    <script src="javascripts/helpers.js"></script>
+    <script src="javascripts/script.js"></script>
+    <script src="javascripts/footer.js"></script>
+    <script src="javascripts/pricing.js"></script>
+  </body>
+</html>

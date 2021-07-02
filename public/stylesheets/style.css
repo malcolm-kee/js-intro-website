@@ -1,0 +1,12 @@
+.faq-btn {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+}
+
+.hidden {
+  display: none !important;
+}
