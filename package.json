@@ -19,6 +19,7 @@
     "nodemailer": "6.6.2"
   },
   "devDependencies": {
+    "@types/node-fetch": "^2.5.11",
     "nodemon": "1.18.4"
   },
   "keywords": []

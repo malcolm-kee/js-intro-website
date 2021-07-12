@@ -102,4 +102,27 @@ apiRouter.post('/signup', (req, res, next) => {
     .catch((err) => next(err));
 });
 
+const xkcdCache = new NodeCache({
+  stdTTL: 60
+});
+
+apiRouter.get('/xkcd-comics/:id', async (req, res) => {
+  const id = req.params.id;
+
+  const cachedResult = xkcdCache.get(id);
+
+  if (cachedResult) {
+    return res.status(200).json(cachedResult);
+  }
+
+  const response = await fetch(`https://xkcd.com/${id}/info.0.json`);
+    if (response.ok) {
+      const result = await response.json();
+      xkcdCache.set(id, result);
+      return res.status(response.status).json(result);
+    }
+
+    res.status(response.status).send(await response.text());
+})
+
 module.exports = apiRouter;
