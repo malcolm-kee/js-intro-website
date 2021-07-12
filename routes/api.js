@@ -125,4 +125,21 @@ apiRouter.get('/xkcd-comics/:id', async (req, res) => {
     res.status(response.status).send(await response.text());
 })
 
+apiRouter.get('/xkcd-comics', async (req, res) => {
+  const cachedResult = xkcdCache.get('latest');
+
+  if (cachedResult) {
+    return res.status(200).json(cachedResult);
+  }
+
+  const response = await fetch(`https://xkcd.com/info.0.json`);
+    if (response.ok) {
+      const result = await response.json();
+      xkcdCache.set('latest', result);
+      return res.status(response.status).json(result);
+    }
+
+    res.status(response.status).send(await response.text());
+})
+
 module.exports = apiRouter;
