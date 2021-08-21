@@ -19,7 +19,7 @@ getServerTime((serverDate) => console.log(`Server date is ${serverDate}`));
 
 // TODO: rewrite the following code using async function
 function wait(second) {
-  return new Promise((resolve) => setTimeout(resolve), second * 1000);
+  return new Promise((resolve) => setTimeout(resolve, second * 1000));
 }
 
 function fetchPricingData() {

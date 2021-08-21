@@ -53,7 +53,7 @@ function fetchDataThenWait() {
 */
 
 function wait(second) {
-  return new Promise((resolve) => setTimeout(resolve), second * 1000);
+  return new Promise((resolve) => setTimeout(resolve, second * 1000));
 }
 
 async function fetchPricingData() {
